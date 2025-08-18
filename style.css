@@ -1,0 +1,70 @@
+/* Tipografia e cores base */
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+/* Hero */
+.hero {
+  min-height: 65vh;
+  background: linear-gradient(115deg, rgba(33, 126, 56, 0.85), rgba(16, 93, 35, 0.85)),
+              url('img/jardim1.jpg') center/cover no-repeat;
+  padding: 5rem 0;
+}
+
+/* Cards de serviço */
+.service-card { border: 0; border-radius: 1rem; transition: transform .2s, box-shadow .2s; }
+.service-card:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem rgba(0,0,0,.1) !important; }
+.service-card i { display: inline-block; }
+
+/* Galeria */
+.gallery-item { object-fit: cover; width: 100%; height: 240px; }
+
+/* Botão flutuante WhatsApp */
+.whats-floating {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 1.75rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+  z-index: 1050;
+  text-decoration: none;
+  transition: transform .2s ease;
+}
+.whats-floating:hover { transform: scale(1.06); }
+
+/* Acessibilidade mínima */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Ajustes de vídeo */
+video { display: block; width: 100%; height: 100%; }
+
+/* Ajuste do footer */
+footer small { opacity: .9; }
+
+  /* Itens da navbar brancos */
+  .navbar .nav-link {
+    color: #ffffff;        /* branco */
+    font-weight: 500;      /* um pouco mais destacado */
+    transition: color 0.3s;
+  }
+
+  /* Cor ao passar o mouse */
+  .navbar .nav-link:hover,
+  .navbar .nav-link:focus {
+    color: #ffeb3b;        /* amarelo suave para destaque ao hover */
+    text-decoration: none;
+  }
+
+  /* Item ativo */
+  .navbar .nav-link.active {
+    color: #ffffff;        /* branco mesmo para o ativo */
+    font-weight: 600;
+  }
+
+

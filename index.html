@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estefe Santiago, Unipessoal Lda</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Estefe Santiago, Unipessoal Lda - Construção e manutenção de jardins, limpeza de terrenos, corte de árvores, reparações, construção civil, pintura e mudanças em Sintra." />
+  <meta name="author" content="Estefe Santiago, Unipessoal Lda" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Ajuste do carrossel da galeria - mantém a proporção da imagem */
+  #carouselGaleria {
+    max-width: 800px; /* limite de largura do carrossel */
+    margin: 0 auto;   /* centraliza horizontalmente */
+  }
+
+  #carouselGaleria .carousel-inner {
+    display: flex;
+    align-items: center; /* centraliza verticalmente as imagens menores */
+  }
+
+  #carouselGaleria img {
+    max-width: 100%;
+    max-height: 400px; /* altura máxima do carrossel */
+    width: auto;       /* mantém proporção */
+    height: auto;
+    margin: 0 auto;    /* centraliza horizontalmente */
+    display: block;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    #carouselGaleria img {
+      max-height: 300px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #carouselGaleria img {
+      max-height: 200px;
+    }
+  }
+
+    /* Botão flutuante WhatsApp */
+    .whats-floating {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+
+    .whats-floating:hover {
+      background-color: #1ebe57;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
+        <img src="img/logo.png" alt="Logo Estefe Santiago" width="40" height="40" class="me-2 rounded-circle">
+        Estefe Santiago, Unipessoal Lda
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Construção e Manutenção de Jardins em Sintra</h1>
+      <p class="lead mt-2 mb-4">Limpeza de terrenos, corte de árvores, reparações, construção civil, pintura e mudanças.</p>
+      <a href="#contact" class="btn btn-light btn-lg shadow-sm">Orçamento rápido</a>
+      <a href="https://wa.me/5585999809504?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20para%20servi%C3%A7os%20de%20jardinagem." target="_blank" class="btn btn-outline-light btn-lg ms-2">Falar no WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- Serviços -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Serviços</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 service-card">
+            <div class="card-body text-center">
+              <i class="bi bi-flower1 display-5"></i>
+              <h5 class="card-title mt-3">Jardins & Espaços Verdes</h5>
+              <p class="card-text">Construção, plantação, manutenção de jardins, espaços verdes e arborizados.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 service-card">
+            <div class="card-body text-center">
+              <i class="bi bi-scissors display-5"></i>
+              <h5 class="card-title mt-3">Limpeza & Corte</h5>
+              <p class="card-text">Limpeza de mato/terrenos, corte de árvores e arbustos, silvicultura.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 service-card">
+            <div class="card-body text-center">
+              <i class="bi bi-tools display-5"></i>
+              <h5 class="card-title mt-3">Reparações & Construção</h5>
+              <p class="card-text">Pequenas reparações, construção civil, pintura e mudanças domésticas/empresariais.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#contact" class="btn btn-success btn-lg">Pedir orçamento agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria em Carrossel -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Galeria de Trabalhos</h2>
+
+      <div id="carouselGaleria" class="carousel slide shadow rounded" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/jardim1.jpg" class="d-block w-100 rounded" alt="Projeto de jardim 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/jardim2.jpg" class="d-block w-100 rounded" alt="Projeto de jardim 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/jardim3.jpg" class="d-block w-100 rounded" alt="Projeto de jardim 3">
+          </div>
+        </div>
+
+        <!-- Botões -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <p class="text-center mt-3 mb-0"><small>Passe para o lado e veja mais projetos.</small></p>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Entre em Contato</h2>
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="p-4 bg-white rounded shadow-sm h-100">
+            <h5 class="mb-3"><i class="bi bi-geo-alt"></i> Endereço</h5>
+            <p class="mb-1">Rua Professor Rui Luis Gomes, Nº 9, 6ª esq.</p>
+            <p class="mb-1">Mem Martins 2725-555, Lisboa - Sintra</p>
+            <hr>
+            <h5 class="mb-2"><i class="bi bi-envelope"></i> Email</h5>
+            <p class="mb-3"><a href="mailto:estefesantiago78@gmail.com">estefesantiago78@gmail.com</a></p>
+
+            <h5 class="mb-2"><i class="bi bi-whatsapp"></i> WhatsApp</h5>
+            <p class="mb-3"><a href="https://wa.me/5585999809504" target="_blank">+55 85 99980-9504</a></p>
+
+            <h5 class="mb-2"><i class="bi bi-instagram"></i> Instagram</h5>
+            <p class="mb-0"><a href="https://instagram.com/iiidrewnniy" target="_blank">@iiidrewnniy</a></p>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="p-4 bg-white rounded shadow-sm">
+            <form id="form-contato" autocomplete="on">
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome*</label>
+                <input type="text" id="nome" name="nome" class="form-control" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="contato" class="form-label">Contato (telefone ou email)*</label>
+                <input type="text" id="contato" name="contato" class="form-control" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label d-block">Quais serviços você precisa?*</label>
+                <div class="row g-2">
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Construção de jardins" id="s1">
+                      <label class="form-check-label" for="s1">Construção de jardins</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Manutenção de jardins" id="s2">
+                      <label class="form-check-label" for="s2">Manutenção de jardins</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Limpeza de terrenos / mato" id="s3">
+                      <label class="form-check-label" for="s3">Limpeza de terrenos / mato</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Corte de árvores e arbustos" id="s4">
+                      <label class="form-check-label" for="s4">Corte de árvores e arbustos</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Pequenas reparações domésticas" id="s5">
+                      <label class="form-check-label" for="s5">Pequenas reparações domésticas</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Construção civil e pintura" id="s6">
+                      <label class="form-check-label" for="s6">Construção civil e pintura</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Mudanças (domésticas/empresariais)" id="s7">
+                      <label class="form-check-label" for="s7">Mudanças (domésticas/empresariais)</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem (opcional)</label>
+                <textarea id="mensagem" name="mensagem" rows="4" class="form-control" placeholder="Ex.: Tamanho do terreno, localização, quando precisa..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-success btn-lg w-100">Enviar pelo WhatsApp</button>
+              <p class="text-muted mt-2 mb-0"><small>Ao clicar, será aberta uma conversa no WhatsApp com sua mensagem pronta.</small></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Sobre a Estefe Santiago, Unipessoal Lda</h2>
+          <p>
+            <strong>Estefe Santiago, Unipessoal Lda</strong> — Sociedade Unipessoal.
+            Fundada em <strong>17/05/2024</strong>, com sede em <strong>Sintra</strong>.
+            Atuação principal em <strong>atividades de plantação e manutenção de jardins</strong>.
+          </p>
+  </section>
+
+
+  <!-- Rodapé -->
+  <footer class="bg-success text-white text-center py-3">
+    <div class="container">
+      <p class="mb-1">© 2024 Estefe Santiago, Unipessoal Lda — Todos os direitos reservados</p>
+      <p class="mb-0"><small>Sociedade Unipessoal </small></p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5585999809504?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento." target="_blank" class="whats-floating" aria-label="Falar no WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap JS + script personalizado -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
