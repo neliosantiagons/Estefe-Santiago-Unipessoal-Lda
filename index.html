@@ -21,20 +21,18 @@
   #carouselGaleria {
     max-width: 800px; /* limite de largura do carrossel */
     margin: 0 auto;   /* centraliza horizontalmente */
+    
   }
-
+/*
   #carouselGaleria .carousel-inner {
     display: flex;
-    align-items: center; /* centraliza verticalmente as imagens menores */
+    align-items: center; /* centraliza verticalmente as imagens menores 
   }
-
+*/
   #carouselGaleria img {
     max-width: 100%;
     max-height: 400px; /* altura máxima do carrossel */
-    width: auto;       /* mantém proporção */
-    height: auto;
-    margin: 0 auto;    /* centraliza horizontalmente */
-    display: block;
+    
   }
 
   /* Responsividade */
@@ -42,12 +40,26 @@
     #carouselGaleria img {
       max-height: 300px;
     }
+    .man {
+      display: block !important;
+      
+    }
+    .man1 {
+      margin-left: 5.5px;
+    }
   }
 
   @media (max-width: 480px) {
     #carouselGaleria img {
       max-height: 200px;
     }
+  }
+  @media(min-width:300px){
+    .orcamento {
+      margin-bottom: 8px;
+
+    };
+    
   }
 
     /* Botão flutuante WhatsApp */
@@ -102,9 +114,12 @@
   <header id="home" class="hero d-flex align-items-center text-center text-white">
     <div class="container">
       <h1 class="display-5 fw-bold">Construção e manutenção de jardins em todo Portugal Continental</h1>
-      <p class="lead mt-2 mb-4">Limpeza de terrenos, corte de árvores, reparações, construção civil, pintura e mudanças.</p>
-      <a href="#contact" class="btn btn-light btn-lg shadow-sm">Orçamento rápido</a>
-      <a href="https://wa.me/351935828029?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20para%20servi%C3%A7os%20de%20jardinagem." target="_blank" class="btn btn-outline-light btn-lg ms-2">Falar no WhatsApp</a>
+      <p class="lead  mb-4">Limpeza de terrenos, corte de árvores, reparações, construção civil, pintura e mudanças.</p>
+      <div class="p-3">
+      <a href="#contact" class="btn d-inline btn-light btn-lg mt orcamento man man1 p-3 shadow-sm">Orçamento rápido</a>
+      <a href="https://wa.me/351935828029?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20para%20servi%C3%A7os%20de%20jardinagem." 
+      target="_blank" class="btn btn-outline-light man d-inline btn-lg ms-2 p-3">Falar no WhatsApp</a>
+      </div>
     </div>
   </header>
 
